@@ -1,0 +1,9 @@
+2019-04-01_800000__2.txt	  Number of steps:800000	 Steps accepted:206707	 acc = 0.26	min(-loglike) = 343.02
+2019-04-01_800000__1.txt	  Number of steps:800000	 Steps accepted:209782	 acc = 0.26	min(-loglike) = 343.02
+2019-04-01_800000__3.txt	  Number of steps:800000	 Steps accepted:210254	 acc = 0.26	min(-loglike) = 343.01
+2019-04-01_800000__5.txt	  Number of steps:800000	 Steps accepted:212992	 acc = 0.27	min(-loglike) = 343.00
+2019-04-01_800000__6.txt	  Number of steps:800000	 Steps accepted:208416	 acc = 0.26	min(-loglike) = 343.01
+2019-04-01_800000__4.txt	  Number of steps:800000	 Steps accepted:208477	 acc = 0.26	min(-loglike) = 343.01
+--> Total    number    of    steps: 4800000
+--> Total number of accepted steps: 1256628
+--> Minimum of -logLike           : 343.00

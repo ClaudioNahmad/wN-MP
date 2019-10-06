@@ -1,0 +1,11 @@
+2019-03-06_950000__5.txt	  Number of steps:950001	 Steps accepted:40442	 acc = 0.043	min(-loglike) = 5987.86
+2019-03-06_950000__6.txt	  Number of steps:950012	 Steps accepted:38426	 acc = 0.04	min(-loglike) = 5987.85
+2019-03-06_950000__3.txt	  Number of steps:950048	 Steps accepted:59162	 acc = 0.062	min(-loglike) = 5987.85
+2019-03-06_950000__2.txt	  Number of steps:950022	 Steps accepted:33171	 acc = 0.035	min(-loglike) = 5987.82
+2019-03-06_950000__1.txt	  Number of steps:949979	 Steps accepted:53760	 acc = 0.057	min(-loglike) = 5987.88
+2019-03-06_950000__7.txt	  Number of steps:949945	 Steps accepted:47223	 acc = 0.05	min(-loglike) = 5987.91
+2019-03-06_950000__8.txt	  Number of steps:949934	 Steps accepted:43801	 acc = 0.046	min(-loglike) = 5987.90
+2019-03-06_950000__4.txt	  Number of steps:949954	 Steps accepted:56458	 acc = 0.059	min(-loglike) = 5987.85
+--> Total    number    of    steps: 7599895
+--> Total number of accepted steps: 372443
+--> Minimum of -logLike           : 5987.82

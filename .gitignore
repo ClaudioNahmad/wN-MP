@@ -1,0 +1,16 @@
+# Ignore everything in this directory
+jumping_factors*
+
+#chains/CPL-other/bao_jla/ba_19-8-1_conv/jumping_factors.txt
+#chains/CPL-other/bao_jla/cpl_19-4-1_conv/jumping_factors.txt
+#chains/N1_nierika/planck_bao_jla/nrk_19-3-6_conv/jumping_factors.txt
+#chains/N3_wimari/bao_jla/wmr_19-8-12/jumping_factors.txt
+#chains/N3_wimari/bao_jla/wmr_19-8-4/jumping_factors.txt
+#chains/lcdm/bao_jla/lcdm_19-6-21_conv/jumping_factors.txt
+#chains/lcdm/planck_bao_jla/lcdm_19-6-25_conv/jumping_factors.txt
+#chains/N1_nierika/bao_jla/nrk_19-3-1_f1-7_conv/jumping_factors.txt
+#chains/N2_nakawe/bao_jla/nkw_19-2-27_conv/jumping_factors.txt
+#chains/N2_nakawe/planck_bao_jla/nkw_19-6-25/jumping_factors.txt
+#chains/N3_wimari/bao_jla/wmr_19-4-1/jumping_factors.txt
+#chains/N3_wimari/bao_jla/wmr_19-7-23/jumping_factors.txt
+#chains/N3_wimari/bao_jla/wmr_19-7-28/jumping_factors.txt

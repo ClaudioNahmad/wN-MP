@@ -1,0 +1,12 @@
+param names    	:  R-1        Best fit    mean        sigma       1-sigma -   1-sigma +   2-sigma -   2-sigma +   1-sigma >   1-sigma <   2-sigma >   2-sigma <  
+100~\omega_{b }	:  9.3559e-03 2.2390e+00  2.2339e+00  nan  nan  nan  nan  nan  nan  nan  nan  nan
+\omega_{cdm }  	:  8.4551e-01 1.1981e-01  1.2005e-01  nan  nan  nan  nan  nan  nan  nan  nan  nan
+10^{+9}A_{s }  	:  4.8544e-01 2.2414e+00  2.2933e+00  nan  nan  nan  nan  nan  nan  nan  nan  nan
+n_{s }         	:  7.0497e-01 9.6810e-01  9.6736e-01  nan  nan  nan  nan  nan  nan  nan  nan  nan
+\tau_{reio }   	:  6.5272e-01 8.7031e-02  9.7551e-02  nan  nan  nan  nan  nan  nan  nan  nan  nan
+b0_{fld }      	:  6.8695e-01-6.8736e-01 -8.8693e-01  nan  nan  nan  nan  nan  nan  nan  nan  nan
+b1_{fld }      	:  6.4369e-01-1.9142e+00 -1.4300e+00  nan  nan  nan  nan  nan  nan  nan  nan  nan
+\Omega_{\Lambda }	:  4.0190e-01 6.8473e-01  6.9098e-01  nan  nan  nan  nan  nan  nan  nan  nan  nan
+z_{reio }      	:  6.1271e-01 1.0741e+01  1.1660e+01  nan  nan  nan  nan  nan  nan  nan  nan  nan
+H0             	:  9.4470e-02 6.7160e+01  6.7889e+01  nan  nan  nan  nan  nan  nan  nan  nan  nan
+\sigma8        	:  1.0386e-01 8.4188e-01  8.5613e-01  nan  nan  nan  nan  nan  nan  nan  nan  nan

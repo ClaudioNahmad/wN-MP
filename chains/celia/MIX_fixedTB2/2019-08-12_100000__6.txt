@@ -1,0 +1,58 @@
+3  1e+30	6.752491e+01	1.513097e+00	1.038191e-01	1.580007e-01	
+1  2701.38	6.840283e+01	9.481732e-01	1.507314e+00	2.913095e-01	
+8  2219.15	6.880076e+01	7.592609e-03	8.880028e-01	1.554248e-01	
+15  2178.88	6.833326e+01	2.648869e-01	4.136670e-01	1.208013e-02	
+55  1943.85	6.846706e+01	4.859581e-01	5.208718e-01	8.946170e-03	
+133  738.15	6.972246e+01	3.500476e-01	5.372472e-01	3.831383e-02	
+762  531.119	6.994291e+01	2.569955e-01	6.104766e-01	6.446236e-02	
+2971  408.153	6.983001e+01	5.711179e-01	4.283555e-01	3.398104e-02	
+715  402.668	7.033492e+01	8.702596e-01	5.301694e-01	1.484580e-02	
+2216  394.168	7.087535e+01	8.035733e-01	3.555714e-01	2.921883e-02	
+5860  377.266	6.998842e+01	1.313064e+00	3.472683e-01	1.691455e-02	
+1.996e+04  350.92	7.009825e+01	1.611353e+00	1.565364e-01	6.066496e-01	
+# After 12 accepted steps: update proposal with max(R-1) = 2.383832 and jumping factor = 2.400000 
+# After 12 accepted steps: update proposal with max(R-1) = 4.201637 and jumping factor = 2.400000 
+# After 12 accepted steps: update proposal with max(R-1) = 0.573115 and jumping factor = 2.400000 
+# After 12 accepted steps: update proposal with max(R-1) = 0.573115 and jumping factor = 2.400000 
+# After 12 accepted steps: update proposal with max(R-1) = 0.799661 and jumping factor = 2.400000 
+# After 12 accepted steps: update proposal with max(R-1) = 0.799661 and jumping factor = 2.400000 
+# After 12 accepted steps: update proposal with max(R-1) = 0.799661 and jumping factor = 2.400000 
+# After 12 accepted steps: update proposal with max(R-1) = 0.810522 and jumping factor = 2.400000 
+# After 12 accepted steps: update proposal with max(R-1) = 0.810522 and jumping factor = 2.400000 
+# After 12 accepted steps: update proposal with max(R-1) = 0.810522 and jumping factor = 2.400000 
+# After 12 accepted steps: update proposal with max(R-1) = 1.486686 and jumping factor = 2.400000 
+# After 12 accepted steps: update proposal with max(R-1) = 1.486686 and jumping factor = 2.400000 
+# After 12 accepted steps: update proposal with max(R-1) = 1.055749 and jumping factor = 2.400000 
+# After 12 accepted steps: update proposal with max(R-1) = 1.055749 and jumping factor = 2.400000 
+4.566e+04  348.793	7.032975e+01	1.641950e+00	1.743152e-01	6.060456e-01	
+1156  349.537	7.001440e+01	1.667653e+00	1.777945e-01	5.811755e+00	
+# After 14 accepted steps: update proposal with max(R-1) = 2.194145 and jumping factor = 2.400000 
+1919  348.31	7.025187e+01	1.652709e+00	1.782890e-01	4.300418e+00	
+# After 15 accepted steps: update proposal with max(R-1) = 2.846974 and jumping factor = 2.400000 
+# After 15 accepted steps: update proposal with max(R-1) = 1.936172 and jumping factor = 2.400000 
+# After 15 accepted steps: update proposal with max(R-1) = 1.936172 and jumping factor = 2.400000 
+# After 15 accepted steps: update proposal with max(R-1) = 1.936172 and jumping factor = 2.400000 
+# After 15 accepted steps: update proposal with max(R-1) = 0.690842 and jumping factor = 2.400000 
+# After 15 accepted steps: update proposal with max(R-1) = 0.695510 and jumping factor = 2.400000 
+# After 15 accepted steps: update proposal with max(R-1) = 0.695510 and jumping factor = 2.400000 
+# After 15 accepted steps: update proposal with max(R-1) = 0.263848 and jumping factor = 2.400000 
+1577  350.924	6.867146e+01	1.664174e+00	1.788130e-01	1.297545e+01	
+# After 16 accepted steps: update proposal with max(R-1) = 0.406365 and jumping factor = 2.400000 
+681  347.291	6.840212e+01	1.664493e+00	1.790544e-01	2.781086e+02	
+# After 17 accepted steps: update proposal with max(R-1) = 0.273004 and jumping factor = 2.400000 
+# After 17 accepted steps: update proposal with max(R-1) = 0.478133 and jumping factor = 2.400000 
+# After 17 accepted steps: update proposal with max(R-1) = 0.381447 and jumping factor = 2.400000 
+# After 17 accepted steps: update proposal with max(R-1) = 0.520172 and jumping factor = 2.400000 
+# After 17 accepted steps: update proposal with max(R-1) = 0.375820 and jumping factor = 2.400000 
+# After 17 accepted steps: update proposal with max(R-1) = 0.375820 and jumping factor = 2.400000 
+# After 17 accepted steps: update proposal with max(R-1) = 0.471797 and jumping factor = 2.400000 
+# After 17 accepted steps: update proposal with max(R-1) = 0.471797 and jumping factor = 2.400000 
+# After 17 accepted steps: update proposal with max(R-1) = 0.458860 and jumping factor = 2.400000 
+6296  346.327	6.828305e+01	1.664390e+00	1.786284e-01	2.155364e+03	
+1875  346.67	6.912798e+01	1.657116e+00	1.780614e-01	1.317035e+05	
+3048  347.261	6.787017e+01	1.670544e+00	1.789178e-01	1.111600e+05	
+1541  347.122	6.884703e+01	1.671543e+00	1.786759e-01	6.539391e+04	
+# After 21 accepted steps: update proposal with max(R-1) = 0.394009 and jumping factor = 2.400000 
+# After 21 accepted steps: update proposal with max(R-1) = 0.408568 and jumping factor = 2.400000 
+# After 21 accepted steps: update proposal with max(R-1) = 0.408568 and jumping factor = 2.400000 
+3554  347.743	6.958491e+01	1.671934e+00	1.785300e-01	1.571726e+05	

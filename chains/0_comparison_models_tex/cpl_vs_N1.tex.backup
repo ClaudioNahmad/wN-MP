@@ -1,0 +1,130 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{amssymb, amsmath, amsbsy, amsfonts}    % ECUACIONES Y SÍMBOLOS MATEMÁTICOS
+\usepackage[utf8]{inputenc}              % CODIFICACIÓN UTF8, PARA Ñs Y ACENTOS Y DEMÁS
+\usepackage{graphicx}
+\usepackage[letterpaper, top=1cm, bottom=1.8cm,right=1.5cm,left=1.5cm]{geometry}
+\usepackage{subfigure}
+\usepackage{verbatim}
+
+
+
+
+\begin{document}
+
+\section{Conjunto de datos}
+\begin{enumerate}
+ \item \textbf{BAO}: BAO-BOSS-DR12, 6 puntos\footnote{revisar el archivo \texttt{montepython3-1/data/BAO$\_$consensus$\_$results$\_$dM$\_$Hz.txt}}\\
+   - Nombre del likelihood: \texttt{bao$\_$boss$\_$dr12}
+ 
+ \vspace{.2cm}
+ \begin{tabular}{c|c|c}
+ \hline
+  z & distance-type & value \\ \hline
+  0.38 & dM(rsfid/rs) & 1512.39 \\
+  0.38 & Hz(rs/rsfid) & 81.2087 \\
+  0.51 & dM(rsfid/rs) & 1975.22 \\
+  0.51 & Hz(rs/rsfid) & 90.9029 \\
+  0.61 & dM(rsfid/rs) & 2306.68 \\
+  0.61 & Hz(rs/rsfid) & 98.9647 \\
+ \hline
+ \end{tabular}
+ 
+ \item \textbf{Supernovas}: SDSS-II Joint Light-curve Analysis (JLA), 740 puntos\footnote{revisar el archivo \texttt{montepython3-1/data/JLA/jla$\_$lcparams.txt}}\\
+   - Nombre del likelihood: \texttt{JLA}\\
+   - Se fijaron los valores de los \textit{nuisance parameters} de acuerdo con [arXiv:1401.4064v2, tabla 15, fila 1] 
+   
+   \begin{itemize}
+    \item $\alpha$ = 0.141
+    \item $\beta$ = 3.099
+    \item M = -19.09
+    \item $\Delta$M = -0.070
+   \end{itemize}
+
+ \item \textbf{CMB}: Planck TT + lowP (2015) \\
+   - Nombre de los likelihoods: \texttt{Planck$\_$highl, Planck$\_$lowl} \\
+   - low-$\ell$ = $\{\ell=2, \ell=29\}$, high-$\ell$ = $\{\ell=30, \ell=2508\}$ \\
+   - Se fijaron los valores de los \textit{nuisance parameters} de acuerdo con el archivo de montepython \texttt{base2015.param}
+   
+\begin{figure}[h]
+ \centering
+ \includegraphics[scale=0.6]{planck_nuisance_parameters.png}
+ \caption{\footnotesize{[mean, min, max, 1-sigma, scale, 'role']}}
+\end{figure}
+
+
+\end{enumerate}
+
+\begin{comment}
+\begin{figure}[h]
+ \centering
+ \includegraphics[scale=0.6]{planck_2015_Dl.pdf}
+ %\caption{\footnotesize{[mean, min, max, 1-sigma, scale, 'role']}}
+\end{figure}
+\end{comment}
+
+\section{Comparación de dos parametrizaciones bidimensionales $(a,b)$ (CPL y w(N=1) con BAO+JLA }
+\subsection{CPL}
+
+\begin{tabular}{|l|c|c|c|c|c|c|} 
+ \hline 
+ & & & \multicolumn{4}{ |c| }{Marginal Limits} \\  
+ Param & best-fit & mean $\pm \sigma$ & \multicolumn{2}{ |c| }{68\%} & \multicolumn{2}{ |c| }{95\%}   \\ 
+ & & & lower & upper  & lower & upper \\ \hline 
+ $100~\omega_{b }$ &$1.625$ & $1.196_{-0.7}^{+0.12}$ & $0.50$ & $1.3120$ & $0.5$ & $2.551$ \\ 
+ $\omega_{cdm }$ &$0.1488$ & $0.1751_{-0.019}^{+0.04}$ & $0.15583$ & $0.21553$ & $0.1021$ & $0.2301$ \\ \hline
+ $w0_{fld }$ &$-1.102$ & $-1.011_{-0.22}^{+0.22}$ & $-1.229$ & $-7.91$ & $-1.441$ & $-0.5831$ \\ 
+ $wa_{fld }$ &$-0.1441$ & $-2.133_{-0.52}^{+2}$ & $-0.26492$ & $-0.1$ & $-5.487$ & $-0.1$ \\ \hline
+ $\Omega_{\Lambda }$ &$0.6483$ & $0.5989_{-0.071}^{+0.041}$ & $0.12593$ & $0.52793$ & $0.4944$ & $0.7248$ \\ 
+ $H0$ &$68.5$ & $68.29_{-0.82}^{+0.81}$ & $67.46$ & $69.10$ & $66.67$ & $69.93$ \\ 
+ \hline 
+ \end{tabular}
+ 
+\medskip
+$-\ln{\cal L}_\mathrm{min} =343.001$, minimum $\chi^2=686$ 
+
+\vspace{.5cm}
+\subsection{w(N=1)}
+
+\vspace{.2cm}
+\begin{tabular}{|l|c|c|c|c|c|c|} 
+ \hline 
+ & & & \multicolumn{4}{ |c| }{Marginal Limits} \\  
+ Param & best-fit & mean $\pm \sigma$ & \multicolumn{2}{ |c| }{68\%} & \multicolumn{2}{ |c| }{95\%}   \\ 
+ & & & lower & upper  & lower & upper \\ \hline 
+ $100~\omega_{b }$ &$2.589$ & $1.426_{-0.93}^{+0.2}$ & $0.5$ & $1.6226$  & $0.5$ & $3.093$ \\ 
+ $\omega_{cdm }$ &$0.1063$ & $0.1638_{-0.024}^{+0.05}$ & $0.13981$ & $0.21387$ & $0.0823$ & $0.2273$ \\ \hline 
+ $b0_{fld }$ &$-1.042$ & $-1.055_{-0.22}^{+0.24}$ & $-1.2717$ & $-0.81614$ & $-1.515$ & $-0.6057$ \\  
+ $b1_{fld }$ &$-0.2704$ & $-2.418_{-0.61}^{+2.3}$ & $-3.0262$ & $-0.1$ & $-5.878$ & $-0.1$ \\ \hline
+ $\Omega_{\Lambda }$ &$0.7194$ & $0.6196_{-0.085}^{+0.05}$ & $0.53413$ & $0.66982$ & $0.5039$ & $0.759$ \\ 
+ $H0$ &$68.65$ & $68.42_{-0.84}^{+0.83}$ & $67.587$ & $69.256$ & $66.76$ & $70.1$ \\ 
+ \hline 
+ \end{tabular}
+ 
+\medskip 
+$-\ln{\cal L}_\mathrm{min} =342.922$, minimum $\chi^2=685.8$ 
+
+\begin{figure}[t]
+ \centering     %%% not \center
+ \subfigure[CPL]{\label{fig:S3_1}\includegraphics[scale=0.55]{cpl_19-4-1_1d.pdf}}
+ \subfigure[w(N=1)]{\label{fig:S3_2}\includegraphics[scale=0.55]{nrk_19-3-1_f1-7_1d.pdf}}
+ %\caption{\footnotesize{Un 3-espacio con curvatura positiva constante es la 3-esfera, a este universo se le llama \textbf{cerrado} y tiene la peculiaridad de contener líneas de mundo cerradas.
+% Se muestra aquí una 2-esfera $S^2$ como referencia}}
+\end{figure}
+
+\begin{comment}
+
+\begin{figure}[h]
+ \centering
+ \includegraphics[scale=0.6]{cpl_19-4-1_triangle.pdf}
+ %\caption{\footnotesize{[mean, min, max, 1-sigma, scale, 'role']}}
+\end{figure}
+\begin{figure}[h]
+ \centering
+ \includegraphics[scale=0.3]{cpl_19-4-1_triangle.pdf}
+ %\caption{\footnotesize{[mean, min, max, 1-sigma, scale, 'role']}}
+\end{figure}
+\end{comment}
+
+\section{Resultados BAO+JLA vs Planck+BAO+JLA}
+
+\end{document}

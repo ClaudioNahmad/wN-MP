@@ -1,0 +1,11 @@
+2019-02-27_1200000__8.txt	  Number of steps:1200000	 Steps accepted:310639	 acc = 0.26	min(-loglike) = 342.76
+2019-02-27_1200000__1.txt	  Number of steps:1200000	 Steps accepted:316008	 acc = 0.26	min(-loglike) = 342.76
+2019-02-27_1200000__5.txt	  Number of steps:1116982	 Steps accepted:294963	 acc = 0.26	min(-loglike) = 342.78
+2019-02-27_1200000__4.txt	  Number of steps:1200000	 Steps accepted:315497	 acc = 0.26	min(-loglike) = 342.78
+2019-02-27_1200000__7.txt	  Number of steps:1128430	 Steps accepted:285923	 acc = 0.25	min(-loglike) = 342.75
+2019-02-27_1200000__3.txt	  Number of steps:1200000	 Steps accepted:315089	 acc = 0.26	min(-loglike) = 342.78
+2019-02-27_1200000__2.txt	  Number of steps:1200000	 Steps accepted:306498	 acc = 0.26	min(-loglike) = 342.77
+2019-02-27_1200000__6.txt	  Number of steps:1200000	 Steps accepted:307742	 acc = 0.26	min(-loglike) = 342.79
+--> Total    number    of    steps: 9445412
+--> Total number of accepted steps: 2452359
+--> Minimum of -logLike           : 342.75
