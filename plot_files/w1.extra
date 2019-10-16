@@ -3,8 +3,8 @@
 #info.legendnames = ['BAO+SNe', 'Planck+BAO+SNe']
 info.to_change = {'b0_fld': 'b_0',
                   'b1_fld': 'b_1',
-                  'b2_fld': 'b_2',
-                  'b3_fld': 'b_3',
+                  #'b2_fld': 'b_2',
+                  #'b3_fld': 'b_3',
                   'H0': 'H_0',
                   'Omega_Lambda':r'$\Omega_{DE}$',
                   'sigma8':r'$\sigma_8$'}

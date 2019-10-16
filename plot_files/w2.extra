@@ -4,18 +4,18 @@
 info.to_change = {'b0_fld': 'b_0',
                   'b1_fld': 'b_1',
                   'b2_fld': 'b_2',
-                  'b3_fld': 'b_3',
+                  #'b3_fld': 'b_3',
                   'H0': 'H_0',
                   'Omega_Lambda':r'$\Omega_{DE}$',
                   'sigma8':r'$\sigma_8$'}
-info.legendnames = [r'$w(z)_{N=1}$'
+info.legendnames = [r'$w(z)_{N=2}$'
                    #, 'CPL'
                    ]
 info.plot_legend_1d = False
 info.plot_legend_2d = True
 
 info.linewidth = ['1']
-info.MP_color_cycle = [info.MP_color['Purple']
+info.MP_color_cycle = [info.MP_color['Blue']
                       #,info.MP_color['Purple']
                       ]
 info.alphas = [1.0]
