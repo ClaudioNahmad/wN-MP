@@ -1,5 +1,7 @@
-info.to_plot = {r'$\omega_b$', r'$\omega_c$', r'$\Omega_{DE}$', 'H_0', 'A_s', 'n_s', 'tau_reio', 'z_reio', 'b_0', 'b_1', 'b_2', 'b_3', r'$\sigma_8$'}
-#info.to_plot = {'omega_b', 'omega_cdm', 'Omega_Lambda', 'b0_fld', 'b1_fld', 'H0'}
+info.to_plot = {r'$\omega_b$', r'$\omega_c$', r'$\Omega_{DE}$', 'H_0', 
+               #'A_s', 'n_s', 'tau_reio', 'z_reio', r'$\sigma_8$'
+                'b_0', 'b_1', 'b_2', 'b_3'}
+
 
 info.redefine = {'omega_b': '(0.01*omega_b)',
                  #'omega_cdm':'(0.01*omega_b+omega_cdm)/(H0/100.)**2',
@@ -16,15 +18,15 @@ info.to_change = {'omega_b': r'$\omega_b$',
                   'Omega_Lambda':r'$\Omega_{DE}$',
                   'sigma8':r'$\sigma_8$'}
 
-info.legendnames = [r'$w(z)_{N=3}$'
+info.legendnames = [r'CMB+BAO+SN',r'BAO+SN' 
                    #, 'CPL'
                    ]
 info.plot_legend_1d = False
 info.plot_legend_2d = True
 
 info.linewidth = ['1']
-info.MP_color_cycle = [info.MP_color['Green']
+info.MP_color_cycle = [info.MP_color['Green'], info.MP_color['Grey']
                       #,info.MP_color['Purple']
                       ]
-info.alphas = [1.0]
+info.alphas = [1.0, 0.5]
 #info.custom2d = ['add_h_contour.py']
