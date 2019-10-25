@@ -1,11 +1,11 @@
-info.to_plot = {r'$\omega_b$', r'$\omega_c$', r'$\Omega_{DE}$', 'H_0', 'A_s', 'n_s', 'tau_reio', 'z_reio', 'b_0', 'b_1', 'b_2', 'b_3', r'$\sigma_8$'}
+info.to_plot = {'omega_b', r'$\omega_c$', r'$\Omega_{DE}$', 'H_0', 'A_s', 'n_s', 'tau_reio', 'z_reio', 'b_0', 'b_1', 'b_2', 'b_3', r'$\sigma_8$'}
 #info.to_plot = {'omega_b', 'omega_cdm', 'Omega_Lambda', 'b0_fld', 'b1_fld', 'H0'}
 
-info.redefine = {'omega_b': '(0.01*omega_b)',
+info.redefine = {#'omega_b': '(0.01*omega_b)',
                  #'omega_cdm':'(0.01*omega_b+omega_cdm)/(H0/100.)**2',
                  }
 #info.legendnames = ['BAO+SNe', 'Planck+BAO+SNe']
-info.to_change = {'omega_b': r'$\omega_b$',
+info.to_change = {#'omega_b': r'$\omega_b$',
                   'omega_cdm': r'$\omega_c$',
                   #'omega_cdm': r'$\Omega_\mathrm{m}$',
                   'b0_fld': 'b_0',
