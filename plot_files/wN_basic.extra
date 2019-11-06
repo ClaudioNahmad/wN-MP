@@ -1,5 +1,6 @@
-info.to_plot = {'omega_b', r'$\omega_c$', r'$\Omega_{DE}$', 'H_0', 'b_0', 'b_1', 'b_2', 'w_0', 'w_1'}
-#info.to_plot = {'omega_b', 'omega_cdm', 'Omega_Lambda', 'b0_fld', 'b1_fld', 'H0'}
+info.to_plot = {'omega_b', r'$\omega_c$', r'$\Omega_{DE}$', 'H_0', 'p_0', 'p_1'#, 'p_2'
+}
+
 
 #info.redefine = {'omega_b': '(0.01*omega_b)',
                  #'omega_cdm':'(0.01*omega_b+omega_cdm)/(H0/100.)**2',
@@ -15,25 +16,26 @@ info.to_change = {#'omega_b': r'$\omega_b$',
                   'H0': 'H_0',
                   'Omega_Lambda':r'$\Omega_{DE}$'}
 
-info.to_change = {'b0_fld': 'b_0',
-                  'b1_fld': 'b_1',
-                  'b2_fld': 'b_2',
-                  'w0_fld': 'w_0',
-                  'wa_fld': 'w_1',
+info.to_change = {'b0_fld': 'p_0',
+                  'b1_fld': 'p_1',
+                  'b2_fld': 'p_2',
+                  'w0_fld': 'p_0',
+                  'wa_fld': 'p_1',
                   'H0': 'H_0',
                   'Omega_Lambda':r'$\Omega_{DE}$'}
 
-info.legendnames = ['$w(z)_{N=2}$','$w(z)_{N=1}$', #'CPL', 'BA', 
-'$\Lambda$-CDM']
+info.legendnames = [#'$w(z)_{N=2}$',
+'$w(z)_{N=1}$', 'CPL', 'BA', '$\Lambda$-CDM']
+
 info.plot_legend_1d = False
 info.plot_legend_2d = True
 
 info.linewidth = ['1']
-info.MP_color_cycle = [info.MP_color['Blue'], info.MP_color['Purple'], #info.MP_color['Grey'], info.MP_color['Red'], 
-info.MP_color['Orange']]
+info.MP_color_cycle = [#info.MP_color['Blue'], 
+info.MP_color['Purple'], info.MP_color['Grey'], info.MP_color['Red'], info.MP_color['Orange']]
 
 #info.MP_color = {'Red':['#E37C80','#CE121F'],'Blue':['#7A98F6','#1157EF'],'Green':['#88B27A','#297C09'],'Orange':['#F3BE82','#ED920F'],'Grey':['#ABABAB','#737373'],'Purple':['#B87294','#88004C']}
-info.alphas = [1.0,0.8,#0.7,0.6,
-0.5]
+info.alphas = [1.0,0.8,0.7,0.6#,0.5
+]
 
 info.custom2d = []
