@@ -1,0 +1,228 @@
+2  1866.18	6.513786e+01	1.724547e+00	9.880246e-02	4.663803e+01	-1.110644e+01	-1.515083e-01	2.735082e-01	
+18  1373.18	6.601141e+01	1.878888e+00	7.389872e-02	5.871209e+01	-1.222393e+01	3.422334e-02	2.127079e-01	
+15  1144.67	6.645525e+01	7.186856e-01	9.197773e-02	4.304800e+01	-2.874264e+01	-2.044800e-02	2.245422e-01	
+3  936.182	6.757351e+01	9.076128e-01	1.080371e-01	3.508457e+01	-3.740895e+01	-1.583742e-01	2.564798e-01	
+35  613.826	6.825616e+01	1.920222e+00	1.140987e-01	1.221796e+01	-4.385628e+01	-3.636624e-01	2.861209e-01	
+30  599.155	6.841680e+01	2.010988e+00	6.596582e-02	1.154703e+01	-5.207934e+01	-2.837748e-01	1.838887e-01	
+8  583.104	6.873524e+01	2.271570e+00	6.700179e-02	1.118309e+01	-6.242749e+01	-3.593948e-01	1.898970e-01	
+101  578.103	6.906932e+01	2.466425e+00	1.207324e-01	6.429311e+00	-5.445656e+01	-7.500592e-01	3.047783e-01	
+70  577.172	6.935822e+01	3.900186e+00	8.902128e-02	1.318202e+01	-6.298517e+01	-4.417988e-01	2.661293e-01	
+37  572.51	6.887526e+01	3.767900e+00	6.447232e-02	1.005972e+01	-6.710222e+01	-4.687678e-01	2.153364e-01	
+311  560.634	7.006607e+01	3.698947e+00	7.850855e-02	1.320659e+01	-6.180841e+01	-4.756161e-01	2.352660e-01	
+98  551.727	6.998809e+01	3.668916e+00	7.108285e-02	1.104601e+01	-6.100764e+01	-5.556715e-01	2.200177e-01	
+316  548.918	7.042651e+01	3.923569e+00	7.987938e-02	1.152964e+01	-5.927124e+01	-6.021550e-01	2.401565e-01	
+133  548.049	7.150230e+01	3.777318e+00	6.468086e-02	1.803646e+01	-7.286514e+01	-4.429043e-01	2.003960e-01	
+474  540.651	7.169912e+01	3.548848e+00	4.575297e-02	1.444147e+01	-5.894256e+01	-4.722690e-01	1.580338e-01	
+3  528.187	7.237400e+01	2.897625e+00	2.066317e-02	1.538094e+01	-5.201672e+01	-4.585515e-01	9.476797e-02	
+302  526.315	7.344141e+01	3.741651e+00	7.837510e-02	1.826156e+01	-4.735619e+01	-6.303596e-01	2.146817e-01	
+96  525.543	7.364649e+01	3.620472e+00	4.111865e-02	2.435747e+01	-5.979243e+01	-5.001251e-01	1.425629e-01	
+78  522.23	7.419688e+01	2.878466e+00	5.882362e-02	2.565405e+01	-5.656084e+01	-5.400242e-01	1.591380e-01	
+43  521.171	7.565089e+01	2.220493e+00	9.931349e-02	1.180066e+01	-5.823150e+01	-9.367106e-01	2.123313e-01	
+45  518.832	7.592220e+01	3.749168e+00	7.321556e-02	1.538686e+01	-5.804373e+01	-8.821464e-01	1.920607e-01	
+47  523.769	7.400861e+01	2.895996e+00	1.192229e-02	2.218645e+01	-5.584059e+01	-4.868006e-01	7.463977e-02	
+25  521.396	7.465440e+01	3.759247e+00	3.520256e-02	2.654043e+01	-5.812944e+01	-5.703878e-01	1.306144e-01	
+237  519.72	7.459165e+01	2.938589e+00	1.871838e-02	1.838986e+01	-7.244419e+01	-6.060237e-01	8.645761e-02	
+258  519.063	7.492695e+01	2.425809e+00	5.980317e-02	2.170804e+01	-7.688716e+01	-6.550980e-01	1.497338e-01	
+185  518.521	7.489108e+01	2.314539e+00	3.912810e-02	2.142439e+01	-8.479551e+01	-6.245602e-01	1.110307e-01	
+734  518.565	7.447853e+01	1.893031e+00	1.790751e-02	2.147348e+01	-8.943451e+01	-5.313872e-01	6.640973e-02	
+102  519.952	7.435079e+01	1.345987e+00	3.803823e-03	2.336161e+01	-7.781173e+01	-4.144372e-01	3.122933e-02	
+81  518.757	7.502812e+01	1.535617e+00	4.004351e-02	2.495647e+01	-8.498470e+01	-5.960471e-01	9.841452e-02	
+19  517.257	7.548666e+01	2.403435e+00	3.314420e-02	3.216495e+01	-7.935448e+01	-5.565548e-01	1.003443e-01	
+448  516.633	7.553909e+01	3.458246e+00	3.709037e-02	3.008261e+01	-7.968842e+01	-6.035732e-01	1.256062e-01	
+66  516.83	7.593893e+01	3.536463e+00	1.072165e-01	1.856013e+01	-1.016037e+02	-9.411633e-01	2.472481e-01	
+10  516.069	7.619793e+01	3.692969e+00	1.103571e-01	4.090522e+01	-9.286826e+01	-8.031859e-01	2.536749e-01	
+30  516.398	7.724598e+01	3.870060e+00	6.574096e-02	4.888271e+01	-9.905273e+01	-7.678641e-01	1.750337e-01	
+326  517.537	7.700754e+01	3.726259e+00	1.009633e-01	1.483836e+01	-1.054196e+02	-9.832254e-01	2.330897e-01	
+4  518.984	7.610293e+01	3.023080e+00	1.199224e-01	2.115008e+01	-1.242967e+02	-9.635707e-01	2.592578e-01	
+# After 36 accepted steps: update proposal with max(R-1) = 2.664627 and jumping factor = 2.400000 
+198  516.579	7.569408e+01	2.386052e+00	8.953935e-02	2.705169e+01	-1.286271e+02	-8.049588e-01	1.979196e-01	
+30  516.691	7.512954e+01	2.431573e+00	8.209755e-02	2.697629e+01	-1.251527e+02	-7.352358e-01	1.885273e-01	
+# After 38 accepted steps: rescaled jumping factor from 2.091465 to 1.384415, due to updated covariance matrix 
+# After 38 accepted steps: update proposal with max(R-1) = 1.929490 and jumping factor = 1.384415 
+125  516.636	7.529847e+01	3.049477e+00	6.819745e-02	2.736055e+01	-9.449828e+01	-6.926493e-01	1.740647e-01	
+# After 39 accepted steps: rescaled jumping factor from 1.384415 to 1.369381, due to updated covariance matrix 
+# After 39 accepted steps: update proposal with max(R-1) = 1.883739 and jumping factor = 1.369381 
+135  516.762	7.532346e+01	3.147643e+00	4.761278e-02	2.858307e+01	-1.002799e+02	-6.391018e-01	1.393980e-01	
+# After 40 accepted steps: rescaled jumping factor from 1.369381 to 1.157778, due to updated covariance matrix 
+# After 40 accepted steps: update proposal with max(R-1) = 1.242897 and jumping factor = 1.157778 
+# After 40 accepted steps: rescaled jumping factor from 1.157778 to 0.990092, due to updated covariance matrix 
+# After 40 accepted steps: update proposal with max(R-1) = 1.287643 and jumping factor = 0.990092 
+# After 40 accepted steps: rescaled jumping factor from 0.990092 to 0.921988, due to updated covariance matrix 
+# After 40 accepted steps: update proposal with max(R-1) = 1.287643 and jumping factor = 0.921988 
+301  518.192	7.534344e+01	2.873518e+00	6.321899e-02	2.559306e+01	-1.182491e+02	-6.984127e-01	1.619872e-01	
+# After 41 accepted steps: rescaled jumping factor from 0.921988 to 0.903989, due to updated covariance matrix 
+# After 41 accepted steps: update proposal with max(R-1) = 1.309441 and jumping factor = 0.903989 
+# After 41 accepted steps: rescaled jumping factor from 0.903989 to 0.785915, due to updated covariance matrix 
+# After 41 accepted steps: update proposal with max(R-1) = 0.605715 and jumping factor = 0.785915 
+176  518.572	7.542730e+01	2.937607e+00	9.412125e-02	3.254351e+01	-1.514109e+02	-7.969761e-01	2.170703e-01	
+135  518.021	7.562064e+01	2.853092e+00	1.141131e-01	3.154560e+01	-1.328171e+02	-8.630943e-01	2.494439e-01	
+197  516.34	7.566640e+01	2.814630e+00	1.130495e-01	2.556460e+01	-8.725997e+01	-8.592718e-01	2.466128e-01	
+26  516.863	7.564130e+01	2.927848e+00	1.180721e-01	2.584901e+01	-8.749744e+01	-8.768865e-01	2.575335e-01	
+176  516.482	7.562284e+01	2.864536e+00	1.126994e-01	2.730852e+01	-9.763805e+01	-8.548040e-01	2.471575e-01	
+22  516.378	7.563926e+01	3.029642e+00	1.180074e-01	2.793547e+01	-1.189506e+02	-8.805240e-01	2.592136e-01	
+131  516.089	7.566026e+01	2.945920e+00	1.205262e-01	2.671578e+01	-1.322477e+02	-8.899714e-01	2.620073e-01	
+# After 48 accepted steps: rescaled jumping factor from 0.241971 to 0.158440, due to updated covariance matrix 
+# After 48 accepted steps: update proposal with max(R-1) = 0.532368 and jumping factor = 0.158440 
+102  516.43	7.565216e+01	2.965056e+00	1.177230e-01	2.910195e+01	-1.287981e+02	-8.784611e-01	2.574998e-01	
+44  516.861	7.561047e+01	2.905483e+00	1.164372e-01	2.716187e+01	-9.799958e+01	-8.693458e-01	2.544928e-01	
+# After 50 accepted steps: rescaled jumping factor from 0.158440 to 0.151007, due to updated covariance matrix 
+# After 50 accepted steps: update proposal with max(R-1) = 0.824076 and jumping factor = 0.151007 
+104  515.783	7.553581e+01	3.005845e+00	1.155947e-01	3.134695e+01	-1.898950e+02	-8.611825e-01	2.552784e-01	
+16  516.319	7.553818e+01	2.921241e+00	1.170639e-01	3.248408e+01	-3.212646e+02	-8.643107e-01	2.563545e-01	
+# After 52 accepted steps: rescaled jumping factor from 0.151007 to 0.124904, due to updated covariance matrix 
+# After 52 accepted steps: update proposal with max(R-1) = 0.751588 and jumping factor = 0.124904 
+113  518.128	7.554806e+01	2.906514e+00	1.177214e-01	3.932913e+01	-3.130140e+02	-8.678594e-01	2.571813e-01	
+# After 53 accepted steps: rescaled jumping factor from 0.124904 to 0.114003, due to updated covariance matrix 
+# After 53 accepted steps: update proposal with max(R-1) = 0.467391 and jumping factor = 0.114003 
+# After 53 accepted steps: rescaled jumping factor from 0.114003 to 0.108814, due to updated covariance matrix 
+# After 53 accepted steps: update proposal with max(R-1) = 0.502957 and jumping factor = 0.108814 
+263  515.85	7.553385e+01	2.839638e+00	1.176173e-01	3.558025e+01	-2.840534e+02	-8.625862e-01	2.559235e-01	
+# After 54 accepted steps: rescaled jumping factor from 0.108814 to 0.106732, due to updated covariance matrix 
+# After 54 accepted steps: update proposal with max(R-1) = 0.418573 and jumping factor = 0.106732 
+73  515.383	7.551187e+01	2.808067e+00	1.171141e-01	4.123582e+01	-5.568593e+02	-8.574474e-01	2.546364e-01	
+66  514.863	7.552363e+01	2.758690e+00	1.195097e-01	4.279738e+01	-9.160484e+02	-8.635248e-01	2.578914e-01	
+456  515.063	7.554742e+01	2.815034e+00	1.172540e-01	4.756524e+01	-1.186702e+03	-8.593188e-01	2.547641e-01	
+27  514.72	7.557752e+01	2.815444e+00	1.171103e-01	4.696465e+01	-1.316624e+03	-8.616645e-01	2.543167e-01	
+# After 58 accepted steps: rescaled jumping factor from 0.106732 to 0.071184, due to updated covariance matrix 
+# After 58 accepted steps: update proposal with max(R-1) = 0.494861 and jumping factor = 0.071184 
+# After 58 accepted steps: rescaled jumping factor from 0.071184 to 0.069693, due to updated covariance matrix 
+# After 58 accepted steps: update proposal with max(R-1) = 0.519573 and jumping factor = 0.069693 
+497  514.792	7.558722e+01	2.793313e+00	1.164786e-01	4.751224e+01	-1.822264e+03	-8.595600e-01	2.527585e-01	
+83  514.617	7.559062e+01	2.738483e+00	1.146957e-01	5.286987e+01	-2.617944e+03	-8.518535e-01	2.486559e-01	
+# After 60 accepted steps: rescaled jumping factor from 0.069693 to 0.067838, due to updated covariance matrix 
+# After 60 accepted steps: update proposal with max(R-1) = 0.442789 and jumping factor = 0.067838 
+# After 60 accepted steps: rescaled jumping factor from 0.067838 to 0.060084, due to updated covariance matrix 
+# After 60 accepted steps: update proposal with max(R-1) = 0.416049 and jumping factor = 0.060084 
+647  514.654	7.559296e+01	2.731698e+00	1.145666e-01	5.368200e+01	-2.777789e+03	-8.506593e-01	2.482957e-01	
+560  514.674	7.559408e+01	2.767855e+00	1.144750e-01	5.698039e+01	-3.998482e+03	-8.515693e-01	2.487609e-01	
+272  514.5	7.559852e+01	2.777960e+00	1.162169e-01	5.488734e+01	-3.657166e+03	-8.576347e-01	2.519564e-01	
+# After 63 accepted steps: rescaled jumping factor from 0.060084 to 0.036602, due to updated covariance matrix 
+# After 63 accepted steps: update proposal with max(R-1) = 0.403582 and jumping factor = 0.036602 
+# After 63 accepted steps: rescaled jumping factor from 0.036602 to 0.034204, due to updated covariance matrix 
+# After 63 accepted steps: update proposal with max(R-1) = 0.418570 and jumping factor = 0.034204 
+332  514.925	7.561278e+01	2.794081e+00	1.162943e-01	5.503098e+01	-2.785498e+03	-8.597388e-01	2.522786e-01	
+# After 64 accepted steps: rescaled jumping factor from 0.034204 to 0.033019, due to updated covariance matrix 
+# After 64 accepted steps: update proposal with max(R-1) = 0.455578 and jumping factor = 0.033019 
+# After 64 accepted steps: rescaled jumping factor from 0.033019 to 0.032307, due to updated covariance matrix 
+# After 64 accepted steps: update proposal with max(R-1) = 0.498429 and jumping factor = 0.032307 
+107  515.204	7.562521e+01	2.796237e+00	1.165111e-01	4.945294e+01	-2.770658e+03	-8.621014e-01	2.526125e-01	
+125  514.581	7.562910e+01	2.784925e+00	1.171616e-01	5.309691e+01	-2.723785e+03	-8.644631e-01	2.535260e-01	
+# After 66 accepted steps: rescaled jumping factor from 0.032307 to 0.030982, due to updated covariance matrix 
+# After 66 accepted steps: update proposal with max(R-1) = 0.503115 and jumping factor = 0.030982 
+# After 66 accepted steps: rescaled jumping factor from 0.030982 to 0.030068, due to updated covariance matrix 
+# After 66 accepted steps: update proposal with max(R-1) = 0.408166 and jumping factor = 0.030068 
+1286  515.003	7.563060e+01	2.763527e+00	1.171348e-01	4.163552e+01	-6.199576e+02	-8.644245e-01	2.530951e-01	
+4380  515.196	7.562670e+01	2.757096e+00	1.158619e-01	5.317029e+01	-2.037210e+03	-8.586364e-01	2.507832e-01	
+# After 68 accepted steps: rescaled jumping factor from 0.030068 to 0.015431, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.400639 and jumping factor = 0.015431 
+# After 68 accepted steps: rescaled jumping factor from 0.015431 to 0.015362, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.415409 and jumping factor = 0.015362 
+# After 68 accepted steps: rescaled jumping factor from 0.015362 to 0.015249, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.415495 and jumping factor = 0.015249 
+# After 68 accepted steps: rescaled jumping factor from 0.015249 to 0.008258, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.406033 and jumping factor = 0.008258 
+# After 68 accepted steps: rescaled jumping factor from 0.008258 to 0.008167, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.415714 and jumping factor = 0.008167 
+# After 68 accepted steps: rescaled jumping factor from 0.008167 to 0.008016, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.421817 and jumping factor = 0.008016 
+# After 68 accepted steps: rescaled jumping factor from 0.008016 to 0.007863, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.439213 and jumping factor = 0.007863 
+# After 68 accepted steps: rescaled jumping factor from 0.007863 to 0.007614, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.443198 and jumping factor = 0.007614 
+# After 68 accepted steps: rescaled jumping factor from 0.007614 to 0.007584, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.443198 and jumping factor = 0.007584 
+# After 68 accepted steps: rescaled jumping factor from 0.007584 to 0.007376, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.437087 and jumping factor = 0.007376 
+# After 68 accepted steps: rescaled jumping factor from 0.007376 to 0.007249, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.428868 and jumping factor = 0.007249 
+# After 68 accepted steps: rescaled jumping factor from 0.007249 to 0.007135, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.435819 and jumping factor = 0.007135 
+# After 68 accepted steps: rescaled jumping factor from 0.007135 to 0.007036, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.434201 and jumping factor = 0.007036 
+# After 68 accepted steps: rescaled jumping factor from 0.007036 to 0.007022, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.434201 and jumping factor = 0.007022 
+# After 68 accepted steps: rescaled jumping factor from 0.007022 to 0.006890, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.425653 and jumping factor = 0.006890 
+# After 68 accepted steps: rescaled jumping factor from 0.006890 to 0.006831, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.429644 and jumping factor = 0.006831 
+# After 68 accepted steps: rescaled jumping factor from 0.006831 to 0.006793, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.418178 and jumping factor = 0.006793 
+# After 68 accepted steps: rescaled jumping factor from 0.006793 to 0.004580, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.402970 and jumping factor = 0.004580 
+# After 68 accepted steps: rescaled jumping factor from 0.004580 to 0.004535, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.415216 and jumping factor = 0.004535 
+# After 68 accepted steps: rescaled jumping factor from 0.004535 to 0.004434, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.435985 and jumping factor = 0.004434 
+# After 68 accepted steps: rescaled jumping factor from 0.004434 to 0.004290, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.455339 and jumping factor = 0.004290 
+# After 68 accepted steps: rescaled jumping factor from 0.004290 to 0.004256, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.452592 and jumping factor = 0.004256 
+# After 68 accepted steps: rescaled jumping factor from 0.004256 to 0.004177, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.456579 and jumping factor = 0.004177 
+# After 68 accepted steps: rescaled jumping factor from 0.004177 to 0.004113, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.470656 and jumping factor = 0.004113 
+# After 68 accepted steps: rescaled jumping factor from 0.004113 to 0.004048, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.470656 and jumping factor = 0.004048 
+# After 68 accepted steps: rescaled jumping factor from 0.004048 to 0.003990, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.477171 and jumping factor = 0.003990 
+# After 68 accepted steps: rescaled jumping factor from 0.003990 to 0.003949, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.475808 and jumping factor = 0.003949 
+# After 68 accepted steps: rescaled jumping factor from 0.003949 to 0.003905, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.470257 and jumping factor = 0.003905 
+# After 68 accepted steps: rescaled jumping factor from 0.003905 to 0.003852, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.468826 and jumping factor = 0.003852 
+# After 68 accepted steps: rescaled jumping factor from 0.003852 to 0.003815, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.464093 and jumping factor = 0.003815 
+# After 68 accepted steps: rescaled jumping factor from 0.003815 to 0.003728, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.474844 and jumping factor = 0.003728 
+# After 68 accepted steps: rescaled jumping factor from 0.003728 to 0.003698, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.474364 and jumping factor = 0.003698 
+# After 68 accepted steps: rescaled jumping factor from 0.003698 to 0.003557, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.450986 and jumping factor = 0.003557 
+# After 68 accepted steps: rescaled jumping factor from 0.003557 to 0.003481, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.432528 and jumping factor = 0.003481 
+# After 68 accepted steps: rescaled jumping factor from 0.003481 to 0.003476, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.431656 and jumping factor = 0.003476 
+# After 68 accepted steps: rescaled jumping factor from 0.003476 to 0.003473, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.430467 and jumping factor = 0.003473 
+# After 68 accepted steps: rescaled jumping factor from 0.003473 to 0.003439, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.428644 and jumping factor = 0.003439 
+# After 68 accepted steps: rescaled jumping factor from 0.003439 to 0.003410, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.428644 and jumping factor = 0.003410 
+# After 68 accepted steps: rescaled jumping factor from 0.003410 to 0.003337, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.422056 and jumping factor = 0.003337 
+# After 68 accepted steps: rescaled jumping factor from 0.003337 to 0.003275, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.405829 and jumping factor = 0.003275 
+# After 68 accepted steps: rescaled jumping factor from 0.003275 to 0.003246, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.402217 and jumping factor = 0.003246 
+# After 68 accepted steps: rescaled jumping factor from 0.003246 to 0.003234, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.402286 and jumping factor = 0.003234 
+# After 68 accepted steps: rescaled jumping factor from 0.003234 to 0.001941, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.414007 and jumping factor = 0.001941 
+# After 68 accepted steps: rescaled jumping factor from 0.001941 to 0.001936, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.426696 and jumping factor = 0.001936 
+# After 68 accepted steps: rescaled jumping factor from 0.001936 to 0.001931, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.439853 and jumping factor = 0.001931 
+# After 68 accepted steps: rescaled jumping factor from 0.001931 to 0.001929, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.442599 and jumping factor = 0.001929 
+# After 68 accepted steps: rescaled jumping factor from 0.001929 to 0.001921, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.446440 and jumping factor = 0.001921 
+# After 68 accepted steps: rescaled jumping factor from 0.001921 to 0.001920, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.446440 and jumping factor = 0.001920 
+# After 68 accepted steps: rescaled jumping factor from 0.001920 to 0.001905, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.425442 and jumping factor = 0.001905 
+# After 68 accepted steps: rescaled jumping factor from 0.001905 to 0.001896, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.411983 and jumping factor = 0.001896 
+# After 68 accepted steps: rescaled jumping factor from 0.001896 to 0.001895, due to updated covariance matrix 
+# After 68 accepted steps: update proposal with max(R-1) = 0.401676 and jumping factor = 0.001895 
+4.337e+04  514.587	7.562705e+01	2.776224e+00	1.162957e-01	5.201009e+01	-2.442879e+03	-8.614722e-01	2.518737e-01	
+# After 69 accepted steps: rescaled jumping factor from 0.001895 to 0.001115, due to updated covariance matrix 
+# After 69 accepted steps: update proposal with max(R-1) = 0.403880 and jumping factor = 0.001115 
+# After 69 accepted steps: rescaled jumping factor from 0.001115 to 0.001114, due to updated covariance matrix 
+# After 69 accepted steps: update proposal with max(R-1) = 0.412210 and jumping factor = 0.001114 
+# After 69 accepted steps: rescaled jumping factor from 0.001114 to 0.001113, due to updated covariance matrix 
+# After 69 accepted steps: update proposal with max(R-1) = 0.407215 and jumping factor = 0.001113 
+3.649e+04  514.317	7.562691e+01	2.774317e+00	1.162920e-01	1.101884e+02	-4.121116e+06	-8.613699e-01	2.518349e-01	
+2380  514.905	7.562684e+01	2.774553e+00	1.162586e-01	1.199570e+02	-8.824504e+06	-8.612666e-01	2.517810e-01	
+664  514.526	7.562685e+01	2.773816e+00	1.162953e-01	1.271856e+02	-2.942457e+07	-8.613470e-01	2.518322e-01	
+1095  514.227	7.562717e+01	2.773435e+00	1.162875e-01	1.230253e+02	-2.484116e+07	-8.613488e-01	2.518098e-01	

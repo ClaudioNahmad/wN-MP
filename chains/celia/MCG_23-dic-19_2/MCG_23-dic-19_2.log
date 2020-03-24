@@ -1,0 +1,10 @@
+2019-12-23_100__1.txt	  Number of steps:100	 Steps accepted:23	 acc = 0.23	min(-loglike) = 559.72
+2019-12-23_50000__5.txt	  Number of steps:50000	 Steps accepted:7187	 acc = 0.14	min(-loglike) = 513.39
+2019-12-23_50000__2.txt	  Number of steps:50000	 Steps accepted:7666	 acc = 0.15	min(-loglike) = 513.37
+2019-12-23_50000__4.txt	  Number of steps:50000	 Steps accepted:5013	 acc = 0.1	min(-loglike) = 513.42
+2019-12-23_50000__6.txt	  Number of steps:50000	 Steps accepted:9636	 acc = 0.19	min(-loglike) = 513.34
+2019-12-23_50000__1.txt	  Number of steps:50000	 Steps accepted:8822	 acc = 0.18	min(-loglike) = 513.34
+2019-12-23_50000__3.txt	  Number of steps:50000	 Steps accepted:7703	 acc = 0.15	min(-loglike) = 513.34
+--> Total    number    of    steps: 300100
+--> Total number of accepted steps: 46050
+--> Minimum of -logLike           : 513.34

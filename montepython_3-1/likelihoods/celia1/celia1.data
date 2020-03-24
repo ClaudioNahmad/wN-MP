@@ -1,0 +1,8 @@
+# DL Celia data
+celia1.data_directory    = data.path['data']
+celia1.z_mu_dmu          = 'DL_Data.txt'
+#sn.covmat_sys           = 'sn_covmat_sys_union2.txt'
+#sn.covmat_nosys         = 'sn_covmat_nosys_union2.txt'
+
+celia1.has_marginalization  = False
+celia1.has_syscovmat        = False
