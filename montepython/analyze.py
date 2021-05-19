@@ -15,7 +15,6 @@ quantities, and shortens the argument passing between the functions.
     `CosmoPmc <http://www.cosmopmc.info>`_ code from Kilbinger et. al.
 
 """
-from __future__ import print_function
 import os
 import math
 import numpy as np
@@ -30,32 +29,17 @@ import matplotlib.pyplot as plt
 import warnings
 import importlib
 import io_mp
-try:
-    from itertools import ifilterfalse as py_filterfalse
-except ImportError:
-    from itertools import filterfalse as py_filterfalse
-try:
-    from itertools import ifilter as py_filter
-except ImportError:
-    from builtins import filter as py_filter
-
+from itertools import ifilterfalse
+from itertools import ifilter
 import scipy.ndimage
 import scipy.special
 import numpy.linalg as la
-import sys
-from io_mp import dictitems,dictvalues,dictkeys
 
 # Defined to remove the burnin for all the points that were produced before the
 # first time where -log-likelihood <= min-minus-log-likelihood+LOG_LKL_CUTOFF
 LOG_LKL_CUTOFF = 3
 
 NUM_COLORS = 6
-
-# Python 2.x - 3.x compatibility: Always use more efficient range function
-try:
-    xrange
-except NameError:
-    xrange = range
 
 
 def analyze(command_line):
@@ -125,17 +109,17 @@ def analyze(command_line):
         # compute covariance matrix, except when we are in update mode and convergence is too bad or good enough
         # or if we are in adaptive mode and only want a first guess for the covmat
         if command_line.update and (np.amax(info.R) > 3. or np.amax(info.R) < 0.4 or np.isnan(np.sum(info.R))) and not command_line.adaptive:
-            print('--> Not computing covariance matrix')
+            print '--> Not computing covariance matrix'
         else:
             try:
                 if command_line.want_covmat:
-                    print('--> Computing covariance matrix')
+                    print '--> Computing covariance matrix'
                     info.covar = compute_covariance_matrix(info)
                     # Writing it out in name_of_folder.covmat
                     io_mp.write_covariance_matrix(
                         info.covar, info.backup_names, info.cov_path)
             except:
-                print('--> Computing covariance matrix failed')
+                print '--> Computing covariance matrix failed'
                 pass
 
         # Store an array, sorted_indices, containing the list of indices
@@ -163,7 +147,7 @@ def analyze(command_line):
         # triangle and 1d plot by default.
         compute_posterior(information_instances)
 
-        print('--> Writing .info and .tex files')
+        print '--> Writing .info and .tex files'
         for info in information_instances:
             info.write_information_files()
 
@@ -271,7 +255,7 @@ def convergence(info):
     info.bounds = np.zeros((len(info.ref_names), len(info.levels), 2))
 
     # Circle through all files to find the global maximum of likelihood
-    #print('--> Finding global maximum of likelihood')
+    #print '--> Finding global maximum of likelihood'
     find_maximum_of_likelihood(info)
 
     # Restarting the circling through files, this time removing the burnin,
@@ -280,7 +264,7 @@ def convergence(info):
     # explored once the chain moved within min_minus_lkl - LOG_LKL_CUTOFF.
     # If the user asks for a keep_fraction <1, this is also the place where
     # a fraction (1-keep_fraction) is removed at the beginning of each chain.
-    #print('--> Removing burn-in')
+    #print '--> Removing burn-in'
     spam = remove_bad_points(info)
 
     info.remap_parameters(spam)
@@ -303,13 +287,13 @@ def convergence(info):
     total[0] = total[1:].sum()
 
     # Compute mean and variance for each chain
-    print('--> Computing mean values')
+    print '--> Computing mean values'
     compute_mean(mean, spam, total)
 
-    print('--> Computing variance')
+    print '--> Computing variance'
     compute_variance(var, mean, spam, total)
 
-    print('--> Computing convergence criterium (Gelman-Rubin)')
+    print '--> Computing convergence criterium (Gelman-Rubin)'
     # Gelman Rubin Diagnostic:
     # Computes a quantity linked to the ratio of the mean of the variances of
     # the different chains (within), and the variance of the means (between)
@@ -330,9 +314,9 @@ def convergence(info):
 
         R[i] = between/within
         if i == 0:
-            print(' -> R-1 is %.6f' % R[i], '\tfor ', info.ref_names[i])
+            print ' -> R-1 is %.6f' % R[i], '\tfor ', info.ref_names[i]
         else:
-            print('           %.6f' % R[i], '\tfor ', info.ref_names[i])
+            print '           %.6f' % R[i], '\tfor ', info.ref_names[i]
 
     # Log finally the total number of steps, and absolute loglikelihood
     with open(info.log_path, 'a') as log:
@@ -422,14 +406,9 @@ def compute_posterior(information_instances):
             3*num_columns,
             3*num_lines), dpi=80)
     if conf.plot_2d:
-        if conf.plot_diag:
-            fig2d = plt.figure(num=2, figsize=(
-                3*len(plotted_parameters),
-                3*len(plotted_parameters)), dpi=80)
-        else:
-            fig2d = plt.figure(num=2, figsize=(
-                3*(len(plotted_parameters)-1),
-                3*(len(plotted_parameters)-1)), dpi=80)
+        fig2d = plt.figure(num=2, figsize=(
+            3*len(plotted_parameters),
+            3*len(plotted_parameters)), dpi=80)
 
     # Create the name of the files, concatenating the basenames with
     # underscores.
@@ -453,9 +432,9 @@ def compute_posterior(information_instances):
                             fisher_name = line.split()[i+1].replace(',', '')
                             try:
                                 fisher_indices[i] = info.ref_names.index(fisher_name)
-                                print('Read fisher matrix entry for parameter ',fisher_name)
+                                print 'Read fisher matrix entry for parameter ',fisher_name
                             except:
-                                print('Input fisher matrix contained unknown parameter ',fisher_name)
+                                print 'Input fisher matrix contained unknown parameter ',fisher_name
                                 fisher_indices[i] = -1
                     else:
                         if fisher_indices[n] >= 0:
@@ -463,13 +442,13 @@ def compute_posterior(information_instances):
                                 if fisher_indices[m] >= 0:
                                     inv_fisher[fisher_indices[n],fisher_indices[m]]=line.split()[m]
                         n += 1
-            #print('Read Fisher matrix:')
-            #print('param  center  scale  (Fii)^1/2  (Fii)^-1/2')
+            #print 'Read Fisher matrix:'
+            #print 'param  center  scale  (Fii)^1/2  (Fii)^-1/2'
             #for i in range(len(info.ref_names)):
             #    if fisher[i,i] != 0.:
-            #        print(info.ref_names[i],info.centers[i],info.scales[i,i],math.sqrt(fisher[i,i]),1./math.sqrt(fisher[i,i]))
+            #        print info.ref_names[i],info.centers[i],info.scales[i,i],math.sqrt(fisher[i,i]),1./math.sqrt(fisher[i,i])
             #    else:
-            #        print(info.ref_names[i],info.centers[i],' ---')
+            #        print info.ref_names[i],info.centers[i],' ---'
         except Warning:
             warnings.warn("Did not find inv_fisher file %s" % file_name)
 
@@ -490,19 +469,12 @@ def compute_posterior(information_instances):
                         for info in information_instances]
     else:
         legend_names = conf.legendnames
-
-
-    if conf.plot_2d and not conf.plot_diag:
-        for info in information_instances:
-            legends[info.id]=plt.Rectangle((0,0),1,1,fc =info.MP_color_cycle[info.id][1],alpha = info.alphas[info.id],linewidth=0)
-
-    print('-----------------------------------------------')
-
+    print '-----------------------------------------------'
     for index, name in enumerate(plotted_parameters):
 
         # Adding the subplots to the respective figures, this will correspond
         # to the diagonal on the triangle plot.
-        if conf.plot_2d and conf.plot_diag:
+        if conf.plot_2d:
             ax2d = fig2d.add_subplot(
                 len(plotted_parameters),
                 len(plotted_parameters),
@@ -525,7 +497,7 @@ def compute_posterior(information_instances):
                 info.ignore_param = True
 
         # The limits might have been enforced by the user
-        if name in dictkeys(conf.force_limits):
+        if name in conf.force_limits.iterkeys():
             x_span = conf.force_limits[name][1]-conf.force_limits[name][0]
             tick_min = conf.force_limits[name][0] +0.1*x_span
             tick_max = conf.force_limits[name][1] -0.1*x_span
@@ -540,7 +512,7 @@ def compute_posterior(information_instances):
         else:
             adjust_ticks(name, information_instances)
 
-        print(' -> Computing histograms for ', name)
+        print ' -> Computing histograms for ', name
         for info in information_instances:
             if not info.ignore_param:
 
@@ -567,7 +539,7 @@ def compute_posterior(information_instances):
                 info.interp_hist, info.interp_grid = cubic_interpolation(
                     info, info.hist, info.bincenters)
 
-                # minimum credible interval (method by Jan Hamann). Fails for
+                # minimum credible interval (method by Jan Haman). Fails for
                 # multimodal histograms
                 bounds = minimum_credible_intervals(info)
                 info.bounds[info.native_index] = bounds
@@ -590,7 +562,7 @@ def compute_posterior(information_instances):
                 # re-normalised
                 #smoothed_interp_hist = smoothed_interp_hist/smoothed_interp_hist.max()
 
-                if conf.plot_2d and conf.plot_diag:
+                if conf.plot_2d:
 
                     ##################################################
                     # plot 1D posterior in diagonal of triangle plot #
@@ -624,7 +596,7 @@ def compute_posterior(information_instances):
                             fontsize=info.ticksize)
                     elif conf.legend_style == 'sides':
                         # Except for the last 1d plot (bottom line), don't
-                        # print(ticks)
+                        # print ticks
                         if index == len(plotted_parameters)-1:
                             ax2d.set_xticklabels(
                                 ['%.{0}g'.format(info.decimal) % s
@@ -672,7 +644,7 @@ def compute_posterior(information_instances):
                     # Execute some customisation scripts for the 1d plots
                     if (info.custom1d != []):
                         for elem in info.custom1d:
-                            exec(open('plot_files/'+elem).read())
+                            execfile('plot_files/'+elem)
 
                     ##################################################
                     # plot 1D posterior in 1D plot                   #
@@ -737,12 +709,12 @@ def compute_posterior(information_instances):
                         # Execute some customisation scripts for the 1d plots
                         if (info.custom1d != []):
                             for elem in info.custom1d:
-                                exec(open('plot_files/'+elem).read())
+                                execfile('plot_files/'+elem)
 
                         ########################################################
                         # plot 1D mean likelihood in diagonal of triangle plot #
                         ########################################################
-                        if conf.plot_2d and conf.plot_diag:
+                        if conf.plot_2d:
                             # raw mean likelihoods:
                             #ax2d.plot(info.bincenter, lkl_mean,
                             #          ls='--', lw=conf.line_width,
@@ -778,11 +750,11 @@ def compute_posterior(information_instances):
                                       alpha = info.alphas[info.id])
 
                     except:
-                        sys.stdout.write('could not find likelihood contour for ')
-                        print(info.ref_parameters[info.native_index])
+                        print 'could not find likelihood contour for ',
+                        print info.ref_parameters[info.native_index]
 
         if conf.subplot is True:
-            if conf.plot_2d and conf.plot_diag:
+            if conf.plot_2d:
                 extent2d = ax2d.get_window_extent().transformed(
                     fig2d.dpi_scale_trans.inverted())
                 fig2d.savefig(os.path.join(
@@ -821,16 +793,10 @@ def compute_posterior(information_instances):
                     else:
                         info.has_second_param = False
 
-                if conf.plot_diag:
-                    ax2dsub = fig2d.add_subplot(
-                        len(plotted_parameters),
-                        len(plotted_parameters),
-                        (index)*len(plotted_parameters)+second_index+1)
-                else:
-                    ax2dsub = fig2d.add_subplot(
-                        len(plotted_parameters)-1,
-                        len(plotted_parameters)-1,
-                        (index-1)*(len(plotted_parameters)-1)+second_index+1)
+                ax2dsub = fig2d.add_subplot(
+                    len(plotted_parameters),
+                    len(plotted_parameters),
+                    (index)*len(plotted_parameters)+second_index+1)
 
                 for info in information_instances:
                     if info.has_second_param:
@@ -880,7 +846,7 @@ def compute_posterior(information_instances):
                         # Execute some customisation scripts for the 2d contour plots
                         if (info.custom2d != []):
                            for elem in info.custom2d:
-                               exec(open('plot_files/'+elem).read())
+                               execfile('plot_files/'+elem)
 
                         # plotting contours, using the ctr_level method (from Karim
                         # Benabed). Note that only the 1 and 2 sigma contours are
@@ -956,10 +922,10 @@ def compute_posterior(information_instances):
 
                                 z = np.zeros((len(x),len(y)), 'float64')
 
-                                #print(info.ref_names[info.native_index])
-                                #print(info.scales)
-                                #print(info.boundaries[info.native_index])
-                                #print(info.centers[info.native_index])
+                                #print info.ref_names[info.native_index]
+                                #print info.scales
+                                #print info.boundaries[info.native_index]
+                                #print info.centers[info.native_index]
 
                                 for ix in range(len(x)):
                                     dx = (x[ix] - info.centers[info.native_index])
@@ -1034,9 +1000,9 @@ def compute_posterior(information_instances):
                         info.hist_file_name, info.x_centers, info.y_centers,
                         info.extent, info.n)
 
-    print('-----------------------------------------------')
+    print '-----------------------------------------------'
     if conf.plot:
-        print('--> Saving figures to .{0} files'.format(info.extension))
+        print '--> Saving figures to .{0} files'.format(info.extension)
         plot_name = '-vs-'.join([os.path.split(elem.folder)[-1]
                                 for elem in information_instances])
 
@@ -1045,16 +1011,11 @@ def compute_posterior(information_instances):
             if ((conf.plot_legend_2d == None) and (len(legends) > 1)) or (conf.plot_legend_2d == True):
                 # Create a virtual subplot in the top right corner,
                 # just to be able to anchor the legend nicely
-                if conf.plot_diag:
-                    ax2d = fig2d.add_subplot(
-                        len(plotted_parameters),
-                        len(plotted_parameters),
-                        len(plotted_parameters))
-                else:
-                    ax2d = fig2d.add_subplot(
-                        len(plotted_parameters)-1,
-                        len(plotted_parameters)-1,
-                        len(plotted_parameters)-1)
+                ax2d = fig2d.add_subplot(
+                    len(plotted_parameters),
+                    len(plotted_parameters),
+                    len(plotted_parameters),
+                    )
                 ax2d.axis('off')
                 try:
                     ax2d.legend(legends, legend_names,
@@ -1249,7 +1210,7 @@ def cubic_interpolation(info, hist, bincenters):
             if elem == 0.:
                 hist[i] = 1.e-99
             elif elem <0:
-                print(hist[i])
+                print hist[i]
                 raise exception()
 
         # One of our methods (using polyfit) does assume that the input histogram has a maximum value of 1.
@@ -1379,7 +1340,7 @@ def write_histogram(hist_file_name, x_centers, hist):
         hist_file.write("\n# Histogram\n")
         hist_file.write(", ".join(
             [str(elem) for elem in hist])+"\n")
-    print('wrote ', hist_file_name)
+    print 'wrote ', hist_file_name
 
 
 def read_histogram(histogram_path):
@@ -1640,13 +1601,13 @@ def extract_parameter_names(info):
                     name, array = extract_dict(line)
                     original = name
                     # Rename the names according the .extra file (opt)
-                    if name in dictkeys(info.to_change):
+                    if name in info.to_change.iterkeys():
                         name = info.to_change[name]
                     # If the name corresponds to a varying parameter (fourth
                     # entry in the initial array being non-zero, or a derived
                     # parameter (could be designed as fixed, it does not make
                     # any difference)), then continue the process of analyzing.
-                    if array[3] != 0 or array[5] == 'derived' or array[5] == 'derived_lkl':
+                    if array[3] != 0 or array[5] == 'derived':
                         # The real name is always kept, to have still the class
                         # names in the covmat
                         backup_names.append(original)
@@ -1668,7 +1629,7 @@ def extract_parameter_names(info):
                         # Take care of the scales
                         scale = array[4]
                         rescale = 1.
-                        if name in dictkeys(info.new_scales):
+                        if name in info.new_scales.iterkeys():
                             rescale = info.new_scales[name]/array[4]
                         scales.append(scale)
                         rescales.append(rescale)
@@ -1722,7 +1683,7 @@ def find_maximum_of_likelihood(info):
         # This reads the chains excluding comment lines:
         with open(chain_file, 'r') as f:
             cheese = (np.array([float(line.split()[1].strip())
-                                for line in py_filterfalse(iscomment,f)]))
+                                for line in ifilterfalse(iscomment,f)]))
 
         try:
             min_minus_lkl.append(cheese[:].min())
@@ -1770,11 +1731,11 @@ def remove_bad_points(info):
 
         basename = os.path.basename(chain_file)
         if index == 0:
-            exec("sys.stdout.write('--> Scanning file %-{0}s' % chain_file)".format(
-                max_name_length))
+            exec "print '--> Scanning file %-{0}s' % chain_file,".format(
+                max_name_length)
         else:
-            exec("sys.stdout.write('%{0}s%-{1}s' % ('', basename))".format(
-                empty_length, total_length-empty_length))
+            exec "print '%{0}s%-{1}s' % ('', basename),".format(
+                empty_length, total_length-empty_length)
         # cheese will brutally contain everything in the chain chain_file being
         # scanned
         #
@@ -1785,7 +1746,7 @@ def remove_bad_points(info):
         # This read the chains excluding comment lines:
         with open(chain_file, 'r') as f:
             cheese = (np.array([[float(elem) for elem in line.split()]
-                                for line in py_filterfalse(iscomment,f)]))
+                                for line in ifilterfalse(iscomment,f)]))
         # If the file contains a broken line with a different number of
         # elements, the previous array generation might fail, and will not have
         # the correct shape. Hence the following command will fail. To avoid
@@ -1837,11 +1798,12 @@ def remove_bad_points(info):
             # The last of these comments gives the number of lines to be skipped in the files
             if info.markovian and not info.update:
                 with open(chain_file, 'r') as f:
-                    for line in py_filter(iscomment,f):
+                    for line in ifilter(iscomment,f):
                         if info.only_markovian or ('update proposal' in line):
                             start = int(line.split()[2])
                         else:
                             pass
+
                 markovian = start
 
             # Remove burn-in, defined as all points until the likelhood reaches min_minus_lkl+LOG_LKL_CUTOFF
@@ -1855,16 +1817,16 @@ def remove_bad_points(info):
             if info.keep_fraction < 1:
                 start = start + int((1.-info.keep_fraction)*(line_count - start))
 
-            sys.stdout.write(": Removed ")
+            print ": Removed",
             if info.markovian:
-                sys.stdout.write("%d non-markovian points, " % markovian)
-            sys.stdout.write("%d points of burn-in, " % burnin)
+                print "%d non-markovian points," % markovian,
+            print "%d points of burn-in," % burnin,
             if info.keep_fraction < 1:
-                sys.stdout.write("and first %.0f percent, " % (100.*(1-info.keep_fraction)))
-            print("keep %d steps" % (line_count-start))
+                print "and first %.0f percent," % (100.*(1-info.keep_fraction)),
+            print "keep %d steps" % (line_count-start)
 
         except IndexError:
-            print(': Removed everything: chain not converged')
+            print ': Removed everything: chain not converged'
 
 
         # ham contains cheese without the burn-in, if there are any points
@@ -1875,9 +1837,9 @@ def remove_bad_points(info):
             # Deal with single file case
             if len(info.files) == 1:
                 warnings.warn("Convergence computed for a single file")
-                bacon = np.copy(ham[::3, :])
-                egg = np.copy(ham[1::3, :])
-                sausage = np.copy(ham[2::3, :])
+                bacon = np.copy(cheese[::3, :])
+                egg = np.copy(cheese[1::3, :])
+                sausage = np.copy(cheese[2::3, :])
 
                 spam.append(bacon)
                 spam.append(egg)
@@ -1895,7 +1857,7 @@ def remove_bad_points(info):
 
     # Applying now new rules for scales, if the name is contained in the
     # referenced names
-    for name in dictkeys(info.new_scales):
+    for name in info.new_scales.iterkeys():
         try:
             index = info.ref_names.index(name)
             for i in xrange(len(spam)):
@@ -2095,7 +2057,7 @@ class Information(object):
         """
 
         # Assign a unique id to this instance
-        self.id = next(self._ids)
+        self.id = self._ids.next()
 
         # Defining the sigma contours (1, 2 and 3-sigma)
         self.levels = np.array([68.26, 95.4, 99.7])/100.
@@ -2133,7 +2095,7 @@ class Information(object):
         # overrides the command line options
         if command_line.optional_plot_file:
             plot_file_vars = {'info': self,'plt': plt}
-            exec(open(command_line.optional_plot_file, plot_file_vars).read())
+            execfile(command_line.optional_plot_file, plot_file_vars)
 
         # check and store keep_fraction
         if command_line.keep_fraction<=0 or command_line.keep_fraction>1:
@@ -2151,10 +2113,10 @@ class Information(object):
 
         """
         if hasattr(self, 'redefine'):
-            for key, value in dictitems(self.redefine):
+            for key, value in self.redefine.iteritems():
                 # Check that the key was an original name
                 if key in self.backup_names:
-                    print(' /|\  Transforming', key, 'into', value)
+                    print ' /|\  Transforming', key, 'into', value
                     # We recover the indices of the key
                     index_to_change = self.backup_names.index(key)+2
                     print('/_o_\ The new variable will be called ' +

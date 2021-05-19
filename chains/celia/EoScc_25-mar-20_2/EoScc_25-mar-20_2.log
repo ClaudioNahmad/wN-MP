@@ -1,0 +1,10 @@
+2020-03-24_200000__2.txt	  Number of steps:200000	 Steps accepted:82447	 acc = 0.41	min(-loglike) = 7.29
+2020-03-24_200000__1.txt	  Number of steps:200000	 Steps accepted:83044	 acc = 0.42	min(-loglike) = 7.29
+2020-03-24_200000__4.txt	  Number of steps:200000	 Steps accepted:80850	 acc = 0.4	min(-loglike) = 7.29
+2020-03-24_200000__5.txt	  Number of steps:200000	 Steps accepted:81840	 acc = 0.41	min(-loglike) = 7.29
+2020-03-24_200000__3.txt	  Number of steps:200000	 Steps accepted:81894	 acc = 0.41	min(-loglike) = 7.29
+2020-03-24_100__1.txt	  Number of steps:100	 Steps accepted:39	 acc = 0.39	min(-loglike) = 7.41
+2020-03-24_200000__6.txt	  Number of steps:200000	 Steps accepted:82958	 acc = 0.41	min(-loglike) = 7.29
+--> Total    number    of    steps: 1200100
+--> Total number of accepted steps: 493072
+--> Minimum of -logLike           : 7.29

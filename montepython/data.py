@@ -4,7 +4,6 @@
 
 .. moduleauthor:: Benjamin Audren <benjamin.audren@epfl.ch>
 """
-from __future__ import print_function
 import os
 import sys
 import math
@@ -15,7 +14,6 @@ import re
 
 import io_mp  # Needs to talk to io_mp.py file for the logging
                                # of parameters
-from io_mp import dictitems,dictvalues,dictkeys
 import prior
 from scipy.optimize import fsolve
 
@@ -215,7 +213,7 @@ class Data(object):
         # Test if the recovered path agrees with the one extracted from
         # the configuration file.
         if self.path != {}:
-            if not 'root' in self.path:
+            if not self.path.has_key('root'):
                 self.path.update({'root': path['root']})
             if self.path != path:
                 warnings.warn(
@@ -224,7 +222,7 @@ class Data(object):
                     "I will use the one from log.param.")
 
         # Determine which cosmological code is in use
-        if os.path.isfile(self.path['cosmo']+'/main/class.c'):
+        if self.path['cosmo'].find('class') != -1:
             self.cosmological_module_name = 'CLASS'
         else:
             self.cosmological_module_name = None
@@ -251,7 +249,7 @@ class Data(object):
                         self.version = line.split()[-1].replace('"', '')
                         break
             if not command_line.silent and not rank:
-                print('with CLASS %s' % self.version)
+                print 'with CLASS %s' % self.version
             # Git version number and branch
             try:
                 # This nul_file helps to get read of a potential useless error
@@ -307,10 +305,8 @@ class Data(object):
 
         else:
             raise io_mp.CosmologicalModuleError(
-                "Could not find any of the registered cosmological modules, such as {CLASS}."
-                " The code tried to search for "+self.path['cosmo']+'/main/class.c'+" but the file did not exist."
-                " If you want to check for another cosmological module version"
-                " please add an elif clause to this part of the code.")
+                "If you want to check for another cosmological module version"
+                " please add an elif clause to this part")
 
         # End of initialisation with the parameter file
         self.param_file.close()
@@ -350,8 +346,8 @@ class Data(object):
             self.log_flag = True
 
         if not command_line.silent and not rank:
-            sys.stdout.write('\nTesting likelihoods for:\n ->')
-            print(', '.join(self.experiments)+'\n')
+            print '\nTesting likelihoods for:\n ->',
+            print ', '.join(self.experiments)+'\n'
 
         self.initialise_likelihoods(self.experiments)
 
@@ -413,7 +409,7 @@ class Data(object):
                 self.read_file(self.param, experiment, separate=True)
 
         # Finally create all the instances of the Parameter given the input.
-        for key, value in dictitems(self.parameters):
+        for key, value in self.parameters.iteritems():
             self.mcmc_parameters[key] = Parameter(value, key)
 
             # When there is no prior edge requested, the syntax consists in setting it to 'None' in the input file.
@@ -463,8 +459,8 @@ class Data(object):
             # add the folder of the likelihood to the path of libraries to...
             # ... import easily the likelihood.py program
             try:
-                exec("from likelihoods.%s import %s" % (
-                    elem, elem))
+                exec "from likelihoods.%s import %s" % (
+                    elem, elem)
             except ImportError as message:
                 raise io_mp.ConfigurationError(
                     "Trying to import the %s likelihood" % elem +
@@ -480,9 +476,9 @@ class Data(object):
             # different things. If log_flag is True, the log.param will be
             # appended.
             try:
-                exec("self.lkl['%s'] = %s('%s/%s.data',\
+                exec "self.lkl['%s'] = %s('%s/%s.data',\
                     self, self.command_line)" % (
-                    elem, elem, folder, elem))
+                    elem, elem, folder, elem)
             except KeyError as e:
                 if e.find('clik') != -1:
                     raise io_mp.ConfigurationError(
@@ -589,7 +585,7 @@ class Data(object):
         # nuisance parameters. This will come in handy when using likelihoods
         # that share some nuisance parameters.
         used_nuisance = []
-        for likelihood in dictvalues(self.lkl):
+        for likelihood in self.lkl.itervalues():
             count = 0
             for elem in nuisance:
                 if elem in likelihood.nuisance:
@@ -604,7 +600,7 @@ class Data(object):
             elem = nuisance[index]
             flag = False
             # For each one, check if they belong to a likelihood
-            for likelihood in dictvalues(self.lkl):
+            for likelihood in self.lkl.itervalues():
                 if (elem in likelihood.nuisance) and (index < len(nuisance)):
                     # If yes, store the number of nuisance parameters needed
                     # for this likelihood.
@@ -694,9 +690,9 @@ class Data(object):
 
         """
         table = []
-        for key, value in dictitems(self.mcmc_parameters):
+        for key, value in self.mcmc_parameters.iteritems():
             number = 0
-            for subvalue in dictvalues(value):
+            for subvalue in value.itervalues():
                 for string in table_of_strings:
                     if subvalue == string:
                         number += 1
@@ -729,7 +725,7 @@ class Data(object):
         else:
             self.need_cosmo_update = False
 
-        for likelihood in dictvalues(self.lkl):
+        for likelihood in self.lkl.itervalues():
             # If the cosmology changed, you need to recompute the likelihood
             # anyway
             if self.need_cosmo_update:
@@ -998,15 +994,15 @@ class Data(object):
                 for elem in self.lkl[experiment].dictionary:
                     if self.lkl[experiment].dictionary[elem] != \
                             other.lkl[experiment].dictionary[elem]:
-                        sys.stdout.write('in your parameter file: ')
-                        print(self.lkl[experiment].dictionary)
-                        sys.stdout.write('in log.param:           ')
-                        print(other.lkl[experiment].dictionary)
+                        print 'in your parameter file: ',
+                        print self.lkl[experiment].dictionary
+                        print 'in log.param:           ',
+                        print other.lkl[experiment].dictionary
                         return -1
             # Fill in the unordered version of dictionaries
-            for key, elem in dictitems(self.mcmc_parameters):
+            for key, elem in self.mcmc_parameters.iteritems():
                 self.uo_parameters[key] = elem['initial']
-            for key, elem in dictitems(other.mcmc_parameters):
+            for key, elem in other.mcmc_parameters.iteritems():
                 other.uo_parameters[key] = elem['initial']
 
             # And finally compare them (standard comparison between

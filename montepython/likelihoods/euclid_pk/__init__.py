@@ -15,10 +15,6 @@ import scipy.interpolate
 
 # Now P_cb instead of P_m is used and only linear quantities are used for RSD
 
-try:
-    xrange
-except NameError:
-    xrange = range
 
 class euclid_pk(Likelihood):
 
@@ -211,7 +207,7 @@ class euclid_pk(Likelihood):
                 self.data_directory, self.fiducial_file)
             with open(fid_file_path, 'w') as fid_file:
                 fid_file.write('# Fiducial parameters')
-                for key, value in io_mp.dictitems(data.mcmc_parameters):
+                for key, value in data.mcmc_parameters.iteritems():
                     fid_file.write(', %s = %.5g' % (
                         key, value['current']*value['scale']))
                 fid_file.write('\n')
@@ -232,7 +228,7 @@ class euclid_pk(Likelihood):
                     fid_file.write('%.8g %.8g %.8g\n' % (sigma_r[index_z], V_survey[index_z], b[index_z]))
 		# TS; save fiducial sigma_NL
 		fid_file.write('%.8g\n' % sigma_NL)
-            print('\n')
+            print '\n'
             warnings.warn(
                 "Writing fiducial model in %s, for %s likelihood\n" % (
                     self.data_directory+'/'+self.fiducial_file, self.name))

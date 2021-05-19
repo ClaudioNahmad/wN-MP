@@ -18,13 +18,9 @@ class ISW(Likelihood_isw):
         Likelihood.__init__(self, path, data, command_line)
         # Initialize likelihoods for each redshift bin of each survey, inheriting
         # from Likelihood_isw
-        ldict = {}
-
-        sdss_bin0 = type('sdss_bin0', (Likelihood_isw, ), {})
-        sdss_bin1 = type('sdss_bin1', (Likelihood_isw, ), {})
-        sdss_bin2 = type('sdss_bin2', (Likelihood_isw, ), {})
-        sdss_bin3 = type('sdss_bin3', (Likelihood_isw, ), {})
-        sdss_bin4 = type('sdss_bin4', (Likelihood_isw, ), {})
+        for elem in ['0','1','2','3','4']:
+                exec("sdss_bin%s = type('sdss_bin%s', (Likelihood_isw, ), {})" % \
+                    (elem, elem))
 
         self.Sdss_bin0 = sdss_bin0(
             os.path.join(self.data_directory, self.sdss_files[0]),
@@ -46,9 +42,9 @@ class ISW(Likelihood_isw):
             os.path.join(self.data_directory, self.sdss_files[4]),
             data, command_line)
 
-        qso_bin0 = type('qso_bin0', (Likelihood_isw, ), {})
-        qso_bin1 = type('qso_bin1', (Likelihood_isw, ), {})
-        qso_bin2 = type('qso_bin2', (Likelihood_isw, ), {})
+        for elem in ['0', '1', '2']:
+                exec("qso_bin%s = type('qso_bin%s', (Likelihood_isw, ), {})" % \
+                    (elem, elem))
 
         self.Qso_bin0 = qso_bin0(
             os.path.join(self.data_directory, self.qso_files[0]),
@@ -62,9 +58,9 @@ class ISW(Likelihood_isw):
             os.path.join(self.data_directory, self.qso_files[2]),
             data, command_line)
 
-        mpz_bin0 = type('mpz_bin0', (Likelihood_isw, ), {})
-        mpz_bin1 = type('mpz_bin1', (Likelihood_isw, ), {})
-        mpz_bin2 = type('mpz_bin2', (Likelihood_isw, ), {})
+        for elem in ['0', '1', '2']:
+                exec("mpz_bin%s = type('mpz_bin%s', (Likelihood_isw, ), {})" % \
+                    (elem, elem))
 
         self.Mpz_bin0 = mpz_bin0(
             os.path.join(self.data_directory, self.mpz_files[0]),
@@ -78,9 +74,9 @@ class ISW(Likelihood_isw):
             os.path.join(self.data_directory, self.mpz_files[2]),
             data, command_line)
 
-        wisc_bin0 = type('wisc_bin0', (Likelihood_isw, ), {})
-        wisc_bin1 = type('wisc_bin1', (Likelihood_isw, ), {})
-        wisc_bin2 = type('wisc_bin2', (Likelihood_isw, ), {})
+        for elem in ['0', '1', '2']:
+                exec("wisc_bin%s = type('wisc_bin%s', (Likelihood_isw, ), {})" % \
+                    (elem, elem))
 
         self.Wisc_bin0 = wisc_bin0(
             os.path.join(self.data_directory, self.wisc_files[0]),
@@ -94,7 +90,9 @@ class ISW(Likelihood_isw):
             os.path.join(self.data_directory, self.wisc_files[2]),
             data, command_line)
 
-        nvss_bin0 = type('nvss_bin0', (Likelihood_isw, ), {})
+        for elem in ['0']:
+                exec("nvss_bin%s = type('nvss_bin%s', (Likelihood_isw, ), {})" % \
+                    (elem, elem))
 
         self.Nvss_bin0 = nvss_bin0(
             os.path.join(self.data_directory, self.nvss_files[0]),

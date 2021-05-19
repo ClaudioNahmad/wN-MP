@@ -1,0 +1,28 @@
+info.to_plot = {'H_0','omega_b',r'$\mu$',r'$\lambda$','k_1','k_2','w_0','Omega_m'}
+
+
+info.to_change = {'H0': 'H_0',
+                  #'omega_b': r'$\omega_b$',
+                  'mu_param': r'$\mu$',
+                  'lmbda_param': r'$\lambda$',
+                  #'omega_cdm': r'$\omega_c$',
+                  #'omega_cdm': r'$\Omega_\mathrm{m}$',
+                  #'b0_fld': 'b_0',
+                  #'b1_fld': 'b_1',
+                  #'b2_fld': 'b_2',
+                  #'b3_fld': 'b_3',
+                  #'Omega_Lambda':r'$\Omega_{DE}$',
+                  'k1param': 'k_1',
+                  'k2param': 'k_2',
+                  'w0_fld': 'w_0'}
+
+
+info.legendnames = ['bao']
+info.plot_legend_1d = False
+info.plot_legend_2d = True
+
+info.linewidth = ['1']
+info.MP_color_cycle = [info.MP_color['Orange']]
+#info.MP_color = {'Red':['#E37C80','#CE121F'],'Blue':['#7A98F6','#1157EF'],'Green':['#88B27A','#297C09'],'Orange':['#F3BE82','#ED920F'],'Grey':['#ABABAB','#737373'],'Purple':['#B87294','#88004C']}
+info.alphas = [1.0]
+info.custom2d = []

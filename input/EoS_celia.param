@@ -87,8 +87,8 @@ data.parameters['omega_b']         = [  2.222,    0.5,     None,  0.023,  0.01, 
 #data.parameters['k2param'] 	   = [1.01,       0.9,      10.0,      0.0000000001,     1.e+9,   'cosmo']
 
 # Escala ==1 (Celia prefiere escala 1 y números grandotes/pequeñitos, revisar su correo)
-data.parameters['muparam'] 	   = [9.e-5,     1.e-7,    1.e-4,    1.e-7,     1,   'cosmo']
-data.parameters['lambdaparam']     = [9.e-10,   1.e-14,    1.e-9,   1.e-14,     1,   'cosmo']
+data.parameters['mu_param'] 	   = [9.e-5,     1.e-7,    1.e-4,    1.e-7,     1,   'cosmo']
+data.parameters['lmbda_param']     = [9.e-10,   1.e-14,    1.e-9,   1.e-14,     1,   'cosmo']
 data.parameters['k1param'] 	   = [1.e+4,     9.e+3,    1.e+5,      1.0,     1,     'cosmo']
 data.parameters['k2param'] 	   = [1.e+9,     9.e+8,   1.e+10,      1.0,     1,     'cosmo']
 

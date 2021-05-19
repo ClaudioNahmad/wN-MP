@@ -1,0 +1,19 @@
+ param names	:  H_{0 }        \omega_b      \mu           \lambda       k_{1 }        k_{2 }        w_{0 }        \Omega_{m }   
+ R-1 values	:  0.005326	 0.062649	 0.062882	 0.062882	 2.059333	 2.059335	 0.022921	 0.050568	
+ Best Fit  	:  8.496524e+01	 5.005382e-01	 7.710197e-05	 9.003375e-10	 1.006990e+04	 1.000000e+09	 5.434981e+00	 2.707042e-01	
+ mean      	:  8.006229e+01	 1.091150e+00	 8.155586e-05	 9.006451e-10	 1.003628e+04	 1.000000e+09	 2.992314e+00	 2.808707e-01	
+ sigma     	:  2.917511e+00	 nan	 nan	 nan	 7.217574e+01	 2.183235e-02	 nan	 nan	
+
+ 1-sigma - 	: -8.973258e-01	 nan	 nan	 nan	-6.748157e+01	 3.167629e-03	 nan	 nan	
+ 1-sigma + 	:  4.937696e+00	 nan	 nan	 nan	 7.686990e+01	 4.683232e-02	 nan	 nan	
+ 2-sigma - 	: -1.061314e+01	 nan	 nan	 nan	 nan	-1.428235e-02	 nan	 nan	
+ 2-sigma + 	:  4.937696e+00	 nan	 nan	 nan	 nan	 6.428230e-02	 nan	 nan	
+ 3-sigma - 	: -1.571139e+01	 nan	 nan	 nan	 nan	-2.226567e-02	 nan	 nan	
+ 3-sigma + 	:  4.937696e+00	 nan	 nan	 nan	 nan	 7.226562e-02	 nan	 nan	
+
+ 1-sigma > 	:  7.916497e+01	 nan	 nan	 nan	 9.968799e+03	 1.000000e+09	 nan	 nan	
+ 1-sigma < 	:  8.499999e+01	 nan	 nan	 nan	 1.011315e+04	 1.000000e+09	 nan	 nan	
+ 2-sigma > 	:  6.944915e+01	 nan	 nan	 nan	 nan	 1.000000e+09	 nan	 nan	
+ 2-sigma < 	:  8.499999e+01	 nan	 nan	 nan	 nan	 1.000000e+09	 nan	 nan	
+ 3-sigma > 	:  6.435090e+01	 nan	 nan	 nan	 nan	 1.000000e+09	 nan	 nan	
+ 3-sigma < 	:  8.499999e+01	 nan	 nan	 nan	 nan	 1.000000e+09	 nan	 nan	
